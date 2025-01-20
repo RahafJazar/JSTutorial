@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<style>
+    button {
+        font-family: "helvetica neue", Helvetica, sans-serif;
+        letter-spacing: 5px;
+        padding: 3px 10px;
+        text-transform: uppercase;
+        border: 2px solid #a2d142;
+        border-radius: 10px;
+        color: #793838d9;
+        box-shadow: 1px 1px 2px green;
+        background-color: #d0e5e9;
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <button type="button"> player1 : chris </button>
+    <script>
+        //add Js To implement dynamic behavior  
+        const button = document.querySelector("button");
+        button.addEventListener("click", updateName);
+
+        function updateName() {
+            const name = prompt("Enter  a name");
+            button.textContent = ` player 1 : ${name}`;
+        }
+    </script>
+</body>
+
+</html>
